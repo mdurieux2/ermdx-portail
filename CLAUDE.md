@@ -7,5 +7,6 @@ Page d'accueil publique de https://ermdx.app : liste des apps de Michaël Durieu
 - Publication : Cloudflare Pages publie `app/` à chaque fusion sur `main`, domaine racine `ermdx.app`.
 - Une app = un `<li>` avec un lien `class="app"` (icône 192 px de l'app, nom, une phrase de description,
   adresse). Ne lister que des apps publiques ; une app réservée (Cloudflare Access) n'apparaît pas ici.
+- Style sobre et professionnel : une seule police (Geist), pas de texte d'accroche ni de slogan.
 - Typographie : pas de tiret cadratin ni de point médian dans les textes.
 - Vérifier le rendu en clair, en sombre et à 390 px de large avant de pousser.

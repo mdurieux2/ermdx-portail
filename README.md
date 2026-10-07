@@ -17,5 +17,5 @@ Ajouter une app : un `<li>` dans `app/index.html` (copier un existant) et son ic
 
 ## Crédits
 
-Polices [Bagel Fat One](https://fonts.google.com/specimen/Bagel+Fat+One) et
-[Instrument Sans](https://fonts.google.com/specimen/Instrument+Sans) (SIL Open Font License), servies depuis le site.
+Police [Geist](https://vercel.com/font) (SIL Open Font License), servie depuis le site. Le logo (lettre « e »
+et mot « ermdx ») est tracé à partir de Geist Semibold, en SVG, sans dépendance à la police.

@@ -4,47 +4,46 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ermdx</title>
-  <meta name="description" content="Petites applications faites à la maison : jeux pour apprendre à lire et compter, affiche de foot personnalisée.">
+  <meta name="description" content="Applications web : Lire &amp; Compter et Affiche foot.">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#f2f4fa" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#121528" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1018" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="fonts/bagel-fat-one.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/geist-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="page">
-    <header class="hero">
-      <h1 class="name">ermdx</h1>
-      <p class="intro">Petites applications faites à la maison. Elles s’installent sur l’écran d’accueil et fonctionnent ensuite sans Internet.</p>
-    </header>
+  <header class="bar">
+    <a class="logo" href="/"><svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><g class="mark-bg"><rect width="64" height="64" rx="15"/></g><path class="mark-fg" transform="translate(13.71 48.26) scale(0.06137)" d="M42 -265C42 -97 146 12 304 12C419 12 515 -51 546 -153L414 -163C395 -117 352 -90 304 -90C229 -90 183 -142 177 -230H554L553 -262C551 -450 440 -542 304 -542C146 -542 42 -433 42 -265ZM179 -316C189 -393 234 -440 304 -440C360 -440 410 -406 420 -316Z"/></svg><svg class="logo-word" viewBox="32 -720 2966 742" role="img" aria-label="ermdx"><path d="M42 -265C42 -97 146 12 304 12C419 12 515 -51 546 -153L414 -163C395 -117 352 -90 304 -90C229 -90 183 -142 177 -230H554L553 -262C551 -450 440 -542 304 -542C146 -542 42 -433 42 -265ZM179 -316C189 -393 234 -440 304 -440C360 -440 410 -406 420 -316ZM636.0 -530V0H766.0V-302C766.0 -387 801.0 -429 886.0 -429H937.0V-530H887.0C819.0 -530 780.0 -496 760.0 -427L757.0 -530ZM1018.0 -530V0H1148.0V-300C1148.0 -387 1184.0 -437 1252.0 -437C1307.0 -437 1335.0 -389 1335.0 -300V0H1453.0V-300C1453.0 -389 1489.0 -437 1557.0 -437C1613.0 -437 1641.0 -390 1641.0 -300V0H1771.0V-341C1771.0 -472 1704.0 -542 1596.0 -542C1520.0 -542 1465.0 -505 1439.0 -433C1416.0 -502 1362.0 -542 1287.0 -542C1217.0 -542 1164.0 -507 1138.0 -445L1135.0 -530ZM2365.0 -710H2235.0V-459C2205.0 -511 2145.0 -542 2077.0 -542C1939.0 -542 1853.0 -435 1853.0 -265C1853.0 -95 1939.0 12 2077.0 12C2149.0 12 2210.0 -21 2239.0 -75L2242.0 0H2365.0ZM1986.0 -265C1986.0 -373 2036.0 -441 2115.0 -441C2193.0 -441 2244.0 -373 2244.0 -265C2244.0 -160 2194.0 -92 2115.0 -92C2037.0 -92 1986.0 -160 1986.0 -265ZM2836.0 -531 2720.0 -357 2604.0 -531H2459.0L2645.0 -271L2451.0 0H2597.0L2720.0 -184L2843.0 0H2988.0L2797.0 -270L2981.0 -531Z"/></svg></a>
+  </header>
 
-    <ul class="apps" aria-label="Les applications">
+  <main class="page">
+    <h1 class="title">Applications</h1>
+
+    <ul class="apps">
       <li>
         <a class="app" href="https://fun.ermdx.app">
-          <img class="app-icon" src="icons/lire-compter.png" alt="" width="72" height="72">
+          <img class="app-icon" src="icons/lire-compter.png" alt="" width="56" height="56">
           <span class="app-text">
             <span class="app-name">Lire &amp; Compter</span>
-            <span class="app-desc">Des jeux pour apprendre à lire, à compter et à parler anglais, de la moyenne section au CE1. Un profil par enfant, tout est lu à voix haute.</span>
+            <span class="app-desc">Jeux pour apprendre à lire, à compter et à parler anglais, de la moyenne section au CE1.</span>
             <span class="app-url">fun.ermdx.app</span>
           </span>
         </a>
       </li>
       <li>
         <a class="app" href="https://affiche.ermdx.app">
-          <img class="app-icon" src="icons/affiche.png" alt="" width="72" height="72">
+          <img class="app-icon" src="icons/affiche.png" alt="" width="56" height="56">
           <span class="app-text">
             <span class="app-name">Affiche foot</span>
-            <span class="app-desc">Une affiche de supporters vus de dos, avec vos prénoms et vos numéros sur les maillots, à imprimer de l’A4 au 40 × 60 cm.</span>
+            <span class="app-desc">Affiche de supporters personnalisée avec prénoms et numéros, à imprimer de l’A4 au 40 × 60 cm.</span>
             <span class="app-url">affiche.ermdx.app</span>
           </span>
         </a>
       </li>
     </ul>
-
-    <footer class="foot">
-      <p>Sans compte ni publicité. Ce que vous saisissez reste sur votre appareil.</p>
-    </footer>
   </main>
+
+  <footer class="foot">© 2026 ermdx</footer>
 </body>
 </html>
