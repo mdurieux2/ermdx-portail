@@ -1,0 +1,155 @@
+/* ermdx : page d'accueil du domaine. Une colonne alignée à gauche : le nom en grand,
+   façon autocollant (ombre pleine jaune), puis la liste des apps avec leurs vraies icônes. */
+
+@font-face {
+  font-family: "Bagel Fat One";
+  src: url("fonts/bagel-fat-one.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("fonts/instrument-sans-400.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("fonts/instrument-sans-600.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+:root {
+  --paper: #f2f4fa;
+  --ink: #1b2040;
+  --muted: #565d7e;
+  --line: #d5d9e8;
+  --sun: #ffd23f;
+  --link: #2f4bd8;
+  --display: "Bagel Fat One", "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
+  --text: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #121528;
+    --ink: #eef0fb;
+    --muted: #a3a8c4;
+    --line: #2b3052;
+    --sun: #f2c22e;
+    --link: #9fb0ff;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--text);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.page {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding-inline: 1.25rem;
+  padding-block: clamp(2.5rem, 8vw, 6rem) 3rem;
+  display: grid;
+  gap: clamp(2.5rem, 6vw, 4rem);
+}
+
+.hero { display: grid; gap: 1.25rem; }
+
+.name {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(5rem, 24vw, 11rem);
+  line-height: 0.9;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-shadow: 0.06em 0.06em 0 var(--sun);
+}
+
+.intro {
+  margin: 0;
+  max-width: 34rem;
+  font-size: 1.2rem;
+  color: var(--muted);
+}
+
+.apps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 2px solid var(--ink);
+}
+
+.apps li { border-bottom: 1px solid var(--line); }
+
+.app {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: 1.25rem;
+  align-items: start;
+  padding-block: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.app-icon {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 1.1rem;
+  display: block;
+}
+
+.app-text { display: grid; gap: 0.35rem; min-width: 0; }
+
+.app-name {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 0.12em;
+  text-underline-offset: 0.18em;
+}
+
+.app:hover .app-name,
+.app:focus-visible .app-name { text-decoration-color: var(--sun); }
+
+.app:focus-visible {
+  outline: 3px solid var(--link);
+  outline-offset: 4px;
+  border-radius: 0.5rem;
+}
+
+.app-desc { color: var(--muted); max-width: 32rem; }
+
+.app-url {
+  font-size: 0.95rem;
+  color: var(--link);
+  overflow-wrap: anywhere;
+}
+
+.foot {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.foot p { margin: 0; }
+
+@media (max-width: 30rem) {
+  .app { grid-template-columns: 3.5rem 1fr; gap: 1rem; }
+  .app-icon { width: 3.5rem; height: 3.5rem; border-radius: 0.85rem; }
+  .app-name { font-size: 1.3rem; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-name { transition: text-decoration-color 150ms ease; }
+}
