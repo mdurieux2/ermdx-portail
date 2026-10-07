@@ -4,7 +4,7 @@ Page d'accueil du domaine <https://ermdx.app> : la liste des applications.
 
 | App | Adresse | Dépôt |
 |---|---|---|
-| Lire & Compter | <https://fun.ermdx.app> | `mdurieux2/lire-compter-samuser` |
+| Lire, compter et s’amuser | <https://fun.ermdx.app> | `mdurieux2/lire-compter-samuser` |
 | Affiche foot | <https://affiche.ermdx.app> | `mdurieux2/affiche-foot` |
 
 ## Publication
